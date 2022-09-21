@@ -1,0 +1,58 @@
+.block-contents,
+.transaction-contents {
+	margin-top: 40px;
+	display: inline-block;
+}
+
+.table-row.header {
+	background-color: rgba(9, 185, 255, 0.15);
+}
+
+.table-row {
+	text-decoration: none;
+	display: table-row;
+	background: #fffff0;
+	color: darkgray;
+
+	.table-col {
+		border: dotted 1px #000;
+	}
+
+}
+
+.table-row:hover {
+	border: 0;
+
+	.table-col {
+		background: rgba(9, 185, 255, 0.15);
+	}
+}
+
+.table-col {
+	padding: 10px 20px;
+	display: table-cell;
+	vertical-align: middle;
+}
+
+.col-info {
+	font-size: 18px;
+	font-weight: 700;
+}
+
+.pagination-row {
+	cursor: pointer;
+	margin-left: auto;
+	margin-right: auto;
+	display: table;
+	border-radius: 25px;
+	margin-top: 30px;
+	margin-bottom: 30px;
+	background-color: rgba(9, 185, 255, 0.15);
+	color: darkgray
+}
+
+.rowNum {
+	width: 110px;
+	margin-left: auto;
+	margin-bottom: 15px;
+}
