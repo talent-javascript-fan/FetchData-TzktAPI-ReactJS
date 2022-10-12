@@ -20,7 +20,7 @@ const BlockTable = () => {
 		const trxCountEdp = "https://api.tzkt.io/v1/operations/transactions/count";
 		const blockRes = await axios.get(blockEdp);
 		const blocks = blockRes.data;
-		blocks.sort(function (a, b) { return b.level - a.level });
+		blocks.sort((a, b) => { return b.level - a.level });
 		blocks.map(block => {
 			let params = new URLSearchParams([['level', block.level]]);
 			axios.get(trxCountEdp, { params })
